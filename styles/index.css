@@ -709,3 +709,17 @@
   margin-top: 12px;
   font: 14px DM Sans, sans-serif;
 }
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0014cc;
+  width: auto;
+  height: 50px;
+  color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}

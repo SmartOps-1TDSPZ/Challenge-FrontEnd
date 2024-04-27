@@ -93,5 +93,12 @@ a {
 
   button {
     margin-top: 15px;
+    margin: 10px;
   }
+}
+
+.buttom{
+  text-decoration: none;
+  color: #fff;
+
 }
