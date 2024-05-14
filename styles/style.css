@@ -1,0 +1,146 @@
+body{
+  margin: 0 ;
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #5c5b5b;
+  margin: 0;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #489DDA;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5vw 0vw;
+}
+
+header {
+  margin: 2vw;
+}
+.logoHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw 12vw 8vw;
+  width: 60%;
+}
+
+.sectionBlue{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #489DDA;
+  color: white;
+  padding: 10vw;
+  margin: 0px; 
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.sectionBlue img{
+  width: 30%;
+}
+
+div.polariod {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.polariod-text {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.servicesSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  margin: 0px; 
+  height: auto;
+  width: auto;
+  text-align: center
+}
+
+.container-feedbacks-cards{
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.feedbacks-cards{
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+}
+
+.card h1{
+  color: blue;
+}
+
+.feedbacksSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  margin: 0px; 
+  height: auto;
+  width: auto;
+}
+
+footer{
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: auto;
+  height: 7vw;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: green;
+  }
+}
+
