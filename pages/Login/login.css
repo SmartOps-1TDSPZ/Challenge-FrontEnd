@@ -1,6 +1,7 @@
 :root {
   --primary-color: #007bff;
   --primary-color-hover: #0056b3;
+  --blue-smartops: #489dda;
   --background-color: #fff;
   --text-color: #000;
   --text-color-white: #fff;
@@ -15,6 +16,29 @@ body {
   margin: 0;
   padding: 0;
   background: var(--background-color);
+  overflow-x: hidden;
+}
+
+.blue-circle {
+  position: absolute;
+  width: 1000px;
+  margin-left: -500px;
+  margin-top: -160px;
+  z-index: -1;
+}
+
+.smart-ops {
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.car {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  width: 350px;
 }
 
 .container {
@@ -22,19 +46,37 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 10px;
+  z-index: 9999;
 }
 
 .login-box {
-  width: 30%;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
   padding: 30px;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .input-group {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   width: 100%;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: end;
+  color: var(--primary-color);
+  font-size: small;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: var(--link-color);
 }
 
 label {
@@ -46,11 +88,12 @@ label {
 
 input[type="email"],
 input[type="password"] {
-  width: 92%;
+  width: 100%;
   padding: 12px;
   border: 1px solid var(--input-border-color);
   border-radius: 4px;
   outline: none;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -61,6 +104,13 @@ input:focus {
 .align-buttom {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.align-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   gap: 16px;
 }
 
@@ -71,6 +121,7 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
   transition: background-color 0.3s;
   color: var(--button-text-color);
   background-color: var(--primary-color);
@@ -80,24 +131,150 @@ button:hover {
   background-color: var(--primary-color-hover);
 }
 
-.btn-google {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.icon-google {
-  width: 18px;
-  height: 18px;
+.icon-btn {
+  width: 40px;
+  height: 40px;
   margin-right: 5px;
 }
 
 .links {
-  margin-top: 40px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+hr {
+  margin-right: 10px;
+  height: 1px;
+  width: 200px;
+  background: #333;
+}
+
+.or-two {
+  margin-left: 10px;
+  height: 1px;
+  width: 200px;
+  background: #333;
+}
+
+.align-or {
+  display: flex;
+  flex-direction: row;
 }
 
 .links a {
   text-decoration: none;
   color: var(--link-color);
   margin: 10px 5px;
+}
+
+.socials {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Extra Pequeno (XS) - Telefones Pequenos: Menos de 576px */
+@media (max-width: 575.98px) {
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 80%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Pequeno (SM) - Telefones Médios e Tablets Pequenos: 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 70%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Médio (MD) - Tablets e Laptops: 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--blue-smartops);
+    overflow-x: hidden;
+  }
+
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 60%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Grande (LG) - Desktops Médios: 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .blue-circle {
+    display: block;
+    width: 900px;
+    margin-left: -450px;
+  }
+
+  .smart-ops {
+    width: 50%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .car {
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+}
+
+/* Extra Grande (XL) - Desktops Grandes: 1200px ou mais */
+@media (min-width: 1200px) {
+  .blue-circle {
+    display: block;
+    width: 1000px;
+    margin-left: -500px;
+  }
+
+  .smart-ops {
+    width: 40%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .car {
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 220px;
+  }
 }
