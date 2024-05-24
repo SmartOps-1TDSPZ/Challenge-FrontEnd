@@ -71,18 +71,6 @@ header {
   width: 100%;
 }
 
-.forgot-password {
-  display: flex;
-  justify-content: end;
-  color: var(--color-primary);
-  font-size: small;
-}
-
-.forgot-password a {
-  text-decoration: none;
-  color: var(--color-link);
-}
-
 label {
   display: block;
   text-align: start;
