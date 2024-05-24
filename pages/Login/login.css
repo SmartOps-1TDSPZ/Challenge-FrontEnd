@@ -83,13 +83,6 @@ header {
   color: var(--color-link);
 }
 
-label {
-  display: block;
-  text-align: start;
-  margin-bottom: 5px;
-  margin-left: 6px;
-}
-
 input[type="email"],
 input[type="password"] {
   width: 100%;
