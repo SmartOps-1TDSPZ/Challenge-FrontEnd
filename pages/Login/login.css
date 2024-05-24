@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--background-color);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .blue-circle {
@@ -30,7 +30,7 @@ body {
 .smart-ops {
   position: absolute;
   margin-top: 20px;
-  left: 50%;
+  left: 46%;
   transform: translateX(-50%);
 }
 
@@ -175,15 +175,21 @@ hr {
 
 /* Extra Pequeno (XS) - Telefones Pequenos: Menos de 576px */
 @media (max-width: 575.98px) {
+  body {
+    background: var(--blue-smartops);
+  }
+
+  .login-box {
+    max-width: 90%;
+  }
+
   .blue-circle {
     display: none;
   }
 
   .smart-ops {
-    width: 80%;
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 34%;
+    margin-top: 5%;
   }
 
   .car {
@@ -193,15 +199,21 @@ hr {
 
 /* Pequeno (SM) - Telefones Médios e Tablets Pequenos: 576px a 767px */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: var(--blue-smartops);
+  }
+
+  .login-box {
+    max-width: 80%;
+  }
+
   .blue-circle {
     display: none;
   }
 
   .smart-ops {
-    width: 70%;
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 40%;
+    margin-top: 1%;
   }
 
   .car {
@@ -212,11 +224,11 @@ hr {
 /* Médio (MD) - Tablets e Laptops: 768px a 991px */
 @media (min-width: 768px) and (max-width: 991.98px) {
   body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
     background: var(--blue-smartops);
-    overflow-x: hidden;
+  }
+
+  .login-box {
+    margin-top: 50px;
   }
 
   .blue-circle {
@@ -224,10 +236,8 @@ hr {
   }
 
   .smart-ops {
-    width: 60%;
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 30%;
+    margin-top: 3%;
   }
 
   .car {
@@ -238,43 +248,41 @@ hr {
 /* Grande (LG) - Desktops Médios: 992px a 1199px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .blue-circle {
-    display: block;
     width: 900px;
+    height: 1050px;
     margin-left: -450px;
   }
 
   .smart-ops {
-    width: 50%;
+    width: 30%;
+    margin-left: -329px;
     margin-top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .car {
-    width: 350px;
-    margin-left: 50px;
-    margin-top: 200px;
+    width: 300px;
+    margin-top: 280px;
+    margin-left: -4px;
   }
 }
 
 /* Extra Grande (XL) - Desktops Grandes: 1200px ou mais */
 @media (min-width: 1200px) {
   .blue-circle {
-    display: block;
     width: 1000px;
+    height: 1090px;
     margin-left: -500px;
   }
 
   .smart-ops {
-    width: 40%;
+    width: 20%;
+    margin-left: -400px;
     margin-top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .car {
     width: 350px;
-    margin-left: 50px;
-    margin-top: 220px;
+    margin-top: 280px;
+    margin-left: 10px;
   }
 }
