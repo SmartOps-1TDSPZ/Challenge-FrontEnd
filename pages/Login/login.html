@@ -12,63 +12,87 @@
     />
   </head>
   <body>
-    <img
-      src="../../assets/Ellipse 6.png"
-      alt="Google logo"
-      class="blue-circle"
-    />
-    <img
-      src="../../assets/Group.svg"
-      alt="Logo Escrito SmatOps"
-      class="smart-ops"
-    />
-    <img src="../../assets/Car.png" alt="Logo Escrito SmatOps" class="car" />
+    <header>
+      <img
+        src="../../assets/Ellipse 6.png"
+        alt="Google logo"
+        class="blue-circle"
+      />
+      <img
+        src="../../assets/Group.svg"
+        alt="Logo Escrito SmartOps"
+        class="smart-ops"
+      />
+      <img src="../../assets/Car.png" alt="Imagem de um carro" class="car" />
+    </header>
 
-    <div class="container">
-      <div class="login-box">
-        <h2>Login</h2>
-        <form action="#">
-          <div class="input-group">
-            <label for="email">Informe seu e-mail:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="input-group">
-            <label for="password">Informe sua senha:</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <div class="forgot-password">
-            <a href="#"><p>Esqueci minha senha</p></a>
-          </div>
-          <div class="align-buttom">
-            <button type="submit" class="btn-continue">Continuar</button>
-            <div class="align-or">
-              <hr />
-              Ou
-              <hr class="or-two" />
+    <main>
+      <div class="container">
+        <section class="login-box" role="form" aria-labelledby="login-title">
+          <h2 id="login-title">Login</h2>
+          <form action="#">
+            <div class="input-group">
+              <label for="email">Informe seu e-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+              />
             </div>
-            <div class="align-socials">
-              <a href="https://www.google.com.br/?hl=pt-BR" class="socials">
-                <img
-                  src="../../assets/IconGoogle.svg"
-                  alt="Google logo"
-                  class="icon-btn"
-                />
-              </a>
-              <a href="https://www.google.com.br/?hl=pt-BR" class="socials">
-                <img
-                  src="../../assets/IconFacebook.svg"
-                  alt="Google logo"
-                  class="icon-btn"
-                />
-              </a>
+            <div class="input-group">
+              <label for="password">Informe sua senha:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                aria-required="true"
+              />
             </div>
-          </div>
-        </form>
-        <p class="links">
-          Ainda não tem conta?
-          <a href="../Cadastro/cadastro.html">Cadastre-se Já!</a>
-        </p>
+            <div class="forgot-password">
+              <a href="#"><p>Esqueci minha senha</p></a>
+            </div>
+            <div class="align-buttom">
+              <button type="submit" class="btn-continue">Continuar</button>
+              <div class="align-or">
+                <hr aria-hidden="true" />
+                <span>Ou</span>
+                <hr class="or-two" aria-hidden="true" />
+              </div>
+              <div class="align-socials">
+                <a
+                  href="https://www.google.com.br/?hl=pt-BR"
+                  class="socials"
+                  aria-label="Login com Google"
+                >
+                  <img
+                    src="../../assets/IconGoogle.svg"
+                    alt="Google logo"
+                    class="icon-btn"
+                  />
+                </a>
+                <a
+                  href="https://www.google.com.br/?hl=pt-BR"
+                  class="socials"
+                  aria-label="Login com Facebook"
+                >
+                  <img
+                    src="../../assets/IconFacebook.svg"
+                    alt="Facebook logo"
+                    class="icon-btn"
+                  />
+                </a>
+              </div>
+            </div>
+          </form>
+          <p class="links">
+            Ainda não tem conta?
+            <a href="../Cadastro/cadastro.html">Cadastre-se Já!</a>
+          </p>
+        </section>
       </div>
-    </div>
+    </main>
   </body>
 </html>
