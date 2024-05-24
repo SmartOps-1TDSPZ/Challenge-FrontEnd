@@ -1,558 +1,528 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-body{
-  margin: 0 ;
-  background-image: url('../assets/white-Texture.svg');
+body {
+  margin: 0;
+  background-image: url("../assets/white-Texture.svg");
   background-size: 800px;
   background-repeat: no-repeat;
   background-color: white;
+  font-family: "Open Sans", sans-serif;
   h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-h1{
-  font-family: "Ubuntu", sans-serif;
-}
-
-button {
-  width: 150px;
-  height: 40px;
-  background-color: #489DDA;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-family: 'Days One', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 5vw 0vw;
-  font-size: 0.8rem;
-}
-a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-
-}
-
-header {
-  margin: 2vw;
-}
-.logoHeader{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5vw 12vw 8vw;
-  width: 60%;
-}
-
-
-
-.sectionBlue{
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #397eaf;
-  color: white;
-  padding: 15vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-  text-align: center;
-}
-.sectionBlue img{
-  width: 30%;
-}
-
-.sectionBlue h1{
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-  margin-bottom: 1;
-}
-
-.sectionBlue p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.sobre-nos{
-  display: none;
-}
-
-div.polariod {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  color: rgb(11, 11, 99);
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.text-title-services{
-  font-size: 35px;
-  margin: 2rem;
-}
-
-
-div.polariod-text {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.servicesSection{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-  text-align: center
-}
-
-.text-title-feedback{
-  font-size: 35px;
-  margin: 2rem;
-}
-
-.container-feedbacks-cards{
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-.feedbacks-cards{
-  display: flex;
-  flex-direction: column;
-  margin: 5vw;
-}
-
-.card{
-  display: flex;
-  flex-direction: row;
-}
-
-.card h1{
-  color: blue;
-}
-
-.feedbacksSection{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-}
-
-
-footer{
-  display: flex;
-  background-color: blue;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: auto;
-  height: 8vw;
-}
-
-
-}
-
-
-@media screen and (min-width: 768px) {
-  body {
-    background-image:
-    url('../assets/Header-woman.svg');
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-   
+  }
 
-  .logoHeader{
+  button {
+    width: 150px;
+    height: 40px;
+    background-color: #489dda;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5vw 0vw;
+    font-size: 0.8rem;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  header {
+    margin: 2vw;
+  }
+  .logoHeader {
     display: flex;
-    margin: 3vw 0vw 3vw;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw 12vw 8vw;
+    width: 60%;
+  }
+
+  .sectionBlue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #397eaf;
+    color: white;
+    padding: 15vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  .sectionBlue img {
     width: 30%;
   }
 
-  .h1-1{
-    color: white;
+  .sectionBlue h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1;
   }
 
-  h2{
-    color: white;
+  .sectionBlue p {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 
-.sectionBlue{
-  display: flex; 
-  flex-direction: column;
-  background-color: #397eaf;
-  align-items:center;
-  justify-content: space-evenly;
-  color: white;
-  padding: 5vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-  text-align: center;
-}
-.sectionBlue img{
-  width: 10%;
+  .sobre-nos {
+    display: none;
+  }
+
+  div.polariod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    color: rgb(11, 11, 99);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+
+  .text-title-services {
+    font-size: 35px;
+    margin: 2rem;
+  }
+
+  div.polariod-text {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .servicesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .text-title-feedback {
+    font-size: 35px;
+    margin: 2rem;
+  }
+
+  .container-feedbacks-cards {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  .feedbacks-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card h1 {
+    color: blue;
+  }
+
+  .feedbacksSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+  }
+
+  footer {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: auto;
+    height: 8vw;
+  }
 }
 
-.sectionBlue h1{
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-  margin-bottom: 1;
-}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../assets/Header-woman.svg");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-.sectionBlue p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 5px 150px 40px 150px;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
+    .logoHeader {
+      display: flex;
+      margin: 3vw 0vw 3vw;
+      width: 30%;
+    }
 
-.sobre-nos{
-  display: flex;
-  flex-direction: column;
-  margin: 40px 150px 0px 150px;
-  color: black;
-  font-size: larger;
-}
+    .h1-1 {
+      color: white;
+    }
 
-.sobre-nos h1{
-  font-size: x-large;
-}
+    h2 {
+      color: white;
+    }
 
-.sobre-nos img{
-  border-radius: 15px;
-  margin-top: 30px;
-}
+    .sectionBlue {
+      display: flex;
+      flex-direction: column;
+      background-color: #397eaf;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      padding: 5vw;
+      margin: 0px;
+      height: auto;
+      width: auto;
+      text-align: center;
+    }
+    .sectionBlue img {
+      width: 10%;
+    }
 
-.text-title-services{
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  text-align: start;
-}
+    .sectionBlue h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
 
+      margin-bottom: 1;
+    }
+
+    .sectionBlue p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 5px 150px 40px 150px;
+
+      text-align: center;
+    }
+
+    .sobre-nos {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 150px 0px 150px;
+      color: black;
+      font-size: larger;
+    }
+
+    .sobre-nos h1 {
+      font-size: x-large;
+    }
+
+    .sobre-nos img {
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    .text-title-services {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      text-align: start;
+    }
   }
 }
 
 @media screen and (min-width: 900px) {
   body {
-.sectionBlue {
-  display: flex; 
-  flex-direction: row;
-  background-color: #397eaf;
-  align-items:center;
-  justify-content: space-between;
-  color: white;
-  padding: 3vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-}
-.sectionBlue img{
-  width: 20%;
-}
+    .sectionBlue {
+      display: flex;
+      flex-direction: row;
+      background-color: #397eaf;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      padding: 3vw;
+      margin: 0px;
+      height: auto;
+      width: auto;
+    }
+    .sectionBlue img {
+      width: 20%;
+    }
 
-.sectionBlue h1{
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-  margin: 5px 20px 15px 15px;  
-}
+    .sectionBlue h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
 
-.sectionBlue p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 0px 0px 0px 0px;
-  font-family: "Ubuntu", sans-serif;
-}
+      margin: 5px 20px 15px 15px;
+    }
 
-.sectionBlue-components{
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-}
-.sectionBlue-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
+    .sectionBlue p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0px 0px 0px 0px;
+    }
 
+    .sectionBlue-components {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+    }
+    .sectionBlue-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+    }
 
-div.polariod {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  text-align: center;
-  width: 50%;
-  color: rgb(12, 12, 165);
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-margin: 15px;
-}
+    div.polariod {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      text-align: center;
+      width: 50%;
+      color: rgb(12, 12, 165);
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 15px;
+    }
 
-.text-title-services{
-  font-size: 35px;
-  margin: 2rem;
-  margin-top: 5rem;
-}
+    .text-title-services {
+      font-size: 35px;
+      margin: 2rem;
+      margin-top: 5rem;
+    }
 
+    div.polariod-text {
+      text-align: start;
+      padding: 10px 20px;
+    }
 
-div.polariod-text {
-  text-align: start;
-  padding: 10px 20px;
-}
+    .servicesSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 3vw;
+      margin: 0px;
+      height: auto;
+      width: auto;
+      text-align: center;
+    }
 
-.servicesSection{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 3vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-  text-align: center
-}
+    .text-title-feedback {
+      font-size: 35px;
+      margin: 2rem;
+    }
 
+    .container-feedbacks-cards {
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 7px;
+    }
+    .feedbacks-cards {
+      display: flex;
+      flex-direction: column;
+    }
 
-.text-title-feedback{
-  font-size: 35px;
-  margin: 2rem;
-}
+    .card {
+      display: flex;
+      flex-direction: row;
+    }
 
-.container-feedbacks-cards{
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 7px;
-}
-.feedbacks-cards{
-  display: flex;
-  flex-direction: column;
-}
+    .card h1 {
+      color: blue;
+      font-size: 15px;
+    }
+    .card p {
+      font-size: 10px;
+    }
 
-.card{
-  display: flex;
-  flex-direction: row;
-}
+    .feedbacksSection {
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+      height: auto;
+      width: auto;
+    }
 
-.card h1{
-  color: blue;
-  font-size: 15px;
-}
-.card p{
-  font-size: 10px;
-}
-
-.feedbacksSection{
-  display: flex;
-  flex-direction: row;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-}
-
-footer{
-  display: flex;
-  background-color: blue;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: auto;
-  height: 10vw;
-}
-
+    footer {
+      display: flex;
+      background-color: blue;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: auto;
+      height: 10vw;
+    }
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   body {
-    background-image:
-    url('../assets/Header-woman.svg');
+    background-image: url("../assets/Header-woman.svg");
     margin: 0;
     background-repeat: no-repeat;
     background-size: contain;
 
-    .logoHeader{
+    .logoHeader {
       width: 20%;
-    }    
-    h1{
-      font-family: "Ubuntu", sans-serif;
+    }
+    h1 {
       font-size: 60px;
     }
 
     h2 {
       font-size: 1.5rem;
       font-weight: 700;
-      font-family: 'Roboto', sans-serif;
       margin: 0;
     }
-    
+
     button {
       width: 260px;
       height: 80px;
-      background-color: #489DDA;
+      background-color: #489dda;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 5px;
-      font-family: 'Days One', sans-serif;
       font-weight: 600;
       cursor: pointer;
       margin: 5vw 0vw;
       font-size: 1.3rem;
     }
-    a{
+    a {
       text-decoration: none;
       color: rgb(255, 255, 255);
     }
 
-.sobre-nos{
-  display: flex;
-  flex-direction: column;
-  margin: 5px 150px 0px 150px;
-  color: black;
-  font-size: larger;
-}
+    .sobre-nos {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 150px 0px 150px;
+      color: black;
+      font-size: larger;
+    }
 
-.sobre-nos h1{
-  font-size: 50px;
-}
+    .sobre-nos h1 {
+      font-size: 50px;
+    }
 
-.sobre-nos img{
-  border-radius: 15px;
-  margin-top: 30px;
-  margin-left: 350px;
-  width: 50%;
-}
+    .sobre-nos img {
+      border-radius: 15px;
+      margin-top: 30px;
+      margin-left: 350px;
+      width: 50%;
+    }
 
+    div.polariod {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      color: rgb(12, 12, 165);
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 15px;
+    }
 
+    .text-title-services {
+      font-size: 50px;
+      margin: 2rem;
+      margin-left: 8%;
+      margin-top: 5rem;
+    }
 
+    div.polariod-text {
+      text-align: start;
+      padding: 10px 20px;
+    }
 
-div.polariod {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 50%;
-  color: rgb(12, 12, 165);
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 15px;
-}
+    .servicesSection h1 {
+      font-size: 35px;
+    }
 
-.text-title-services{
-  font-size: 50px;
-  margin: 2rem;
-  margin-left: 8%;
-  margin-top: 5rem;
-}
+    .servicesSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 3vw;
+      margin: 0px;
+      height: auto;
+      width: auto;
+      text-align: center;
+    }
 
+    .text-title-feedback {
+      font-size: 50px;
+      margin: 2rem;
+    }
 
-div.polariod-text {
-  text-align: start;
-  padding: 10px 20px;
-}
+    .container-feedbacks-cards {
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 7px;
+    }
+    .feedbacks-cards {
+      display: flex;
+      flex-direction: column;
+    }
 
-.servicesSection h1{
-  font-size: 35px;
-}
+    .card {
+      display: flex;
+      flex-direction: row;
+    }
 
-.servicesSection{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 3vw;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-  text-align: center
-}
+    .card h1 {
+      color: blue;
+      font-size: 25px;
+    }
+    .card p {
+      font-size: 20px;
+    }
 
+    .feedbacksSection {
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+      height: auto;
+      width: auto;
+    }
 
-.text-title-feedback{
-  font-size: 50px;
-  margin: 2rem;
-}
+    .feedbacks-cards p {
+      font-size: 20px;
+    }
 
-.container-feedbacks-cards{
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 7px;
-}
-.feedbacks-cards{
-  display: flex;
-  flex-direction: column;
-}
+    .feedbacks-cards img {
+      width: 30%;
+    }
 
-.card{
-  display: flex;
-  flex-direction: row;
-}
-
-.card h1{
-  color: blue;
-  font-size: 25px;
-}
-.card p{
-  font-size: 20px;
-}
-
-.feedbacksSection{
-  display: flex;
-  flex-direction: row;
-  margin: 0px; 
-  height: auto;
-  width: auto;
-}
-
-.feedbacks-cards p{
-font-size: 20px;
-}
-
-.feedbacks-cards img{
-  width: 30%;
-}
-
-footer{
-  display: flex;
-  background-color: blue;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: auto;
-  height: 5vw;
-  font-size: 30px;
-}
+    footer {
+      display: flex;
+      background-color: blue;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: auto;
+      height: 5vw;
+      font-size: 30px;
+    }
   }
 }
