@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../../assets/Ellipse 5.svg"
+        alt="Google logo"
+        class="blue-circle"
+      />
+      <img
+        src="../../assets/Logo-white-LadingPage.svg"
+        alt="Logo Escrito SmartOps"
+        class="smart-ops"
+      />
+      <img src="../../assets/car.svg" alt="Imagem de um carro" class="car" />
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="login-box" role="form" aria-labelledby="login-title">
+          <h2 id="login-title">Login</h2>
+          <form action="#">
+            <div class="input-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Informe seu e-mail"
+                aria-required="true"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Informe sua senha"
+                aria-required="true"
+              />
+            </div>
+            <div class="forgot-password">
+              <a href="#"><p>Esqueci minha senha</p></a>
+            </div>
+            <div class="align-buttom">
+              <button type="submit" class="btn-continue">Continuar</button>
+              <div class="align-or">
+                <hr aria-hidden="true" />
+                <span>Ou</span>
+                <hr class="or-two" aria-hidden="true" />
+              </div>
+              <div class="align-socials">
+                <a
+                  href="https://www.google.com.br/?hl=pt-BR"
+                  class="socials"
+                  aria-label="Login com Google"
+                >
+                  <img
+                    src="../../assets/IconGoogle.svg"
+                    alt="Google logo"
+                    class="icon-btn"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzE2NTEyNDc0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+                  class="socials"
+                  aria-label="Login com Facebook"
+                >
+                  <img
+                    src="../../assets/IconFacebook.svg"
+                    alt="Facebook logo"
+                    class="icon-btn"
+                  />
+                </a>
+              </div>
+            </div>
+          </form>
+          <p class="links">
+            Ainda não tem conta?
+            <a href="../Cadastro/cadastro.html">Cadastre-se Já!</a>
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
